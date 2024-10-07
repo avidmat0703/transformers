@@ -2,10 +2,8 @@ package org.iesvdm.transformer;
 
 import java.util.*;
 
-public class UseTransformers3
-{
-    public static void main(String[] args) throws Exception
-    {
+public class UseTransformers3 {
+    public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter some numbers (all on one line, separated by spaces):");
         String line = input.nextLine();
@@ -20,5 +18,4 @@ public class UseTransformers3
         ArrayList<Integer> b=Transformers.applyConst(multByM,a);
         System.out.println("Multiplying the contents by "+m+" gives: "+b);
     }
-
 }

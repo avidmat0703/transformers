@@ -2,10 +2,8 @@ package org.iesvdm.transformer;
 
 import java.util.*;
 
-public class UseTransformers4
-{
-    public static void main(String[] args) throws Exception
-    {
+public class UseTransformers4 {
+    public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter some words (all on one line, separated by spaces):");
         String line = input.nextLine();
@@ -27,6 +25,4 @@ public class UseTransformers4
         ArrayList<String> d=Transformers.applyConst(numberer,c);
         System.out.println("Numbering these words gives: "+d);
     }
-
 }
-

@@ -1,16 +1,13 @@
 package org.iesvdm.transformer;
 
-class Multiplier implements Transformer<Integer>
-{
+class Multiplier implements Transformer<Integer> {
     private int mult;
 
-    public Multiplier(int m)
-    {
+    public Multiplier(int m) {
         mult = m;
     }
 
-    public Integer transform(Integer n)
-    {
+    public Integer transform(Integer n) {
         return n*mult;
     }
 }
