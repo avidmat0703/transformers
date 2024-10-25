@@ -12,7 +12,12 @@ public class NumberAdder implements Transformer<String>
     public String transform(String str)
     {
         number++;
-        return number+") "+str;
+        return number+"-"+str;
     }
+//    public String transform2(String str)
+//    {
+//        number++;
+//        return number+" "+str;
+//    }
 }
 

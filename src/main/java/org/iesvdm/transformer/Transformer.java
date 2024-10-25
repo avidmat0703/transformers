@@ -1,7 +1,7 @@
 package org.iesvdm.transformer;
 
-public interface Transformer<T>
-{
+@FunctionalInterface  //porque solo tiene un metodo
+public interface Transformer<T>{
     public T transform(T obj);
 }
 
