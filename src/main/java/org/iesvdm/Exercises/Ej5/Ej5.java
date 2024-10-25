@@ -9,7 +9,7 @@ import static org.iesvdm.transformer.Transformers.transformList;
 public class Ej5 {
     public static void main(String[] args) {
         LispList<String> l = new LispList<>(new LispList.Cell<>("0", new LispList.Cell<>("1" ,new LispList.Cell<>("2", null))));
-        Transformer<String> a = new NumberAdder(); //Modify the method changing the "(" by "-"
+        Transformer<String> a = new NumberAdder();
         List<String> lista = transformList(a, l);
         System.out.println(lista);
     }

@@ -11,7 +11,7 @@ public class SaluteTest {
     @Test
     public void testTransformList() {
         LispList<String> l = new LispList<>(new LispList.Cell<>("Jack", new LispList.Cell<>("Mark", new LispList.Cell<>("Josh", null))));
-        MainEj6 salute = new MainEj6("Hi");
+        SaluteEj6 salute = new SaluteEj6("Hi");
         List<String> addlist = Transformers.transformList(salute, l);
         assertEquals(Arrays.asList("Hi Jack", "Hi Mark", "Hi Josh"), addlist);
     }

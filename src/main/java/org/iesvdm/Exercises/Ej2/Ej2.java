@@ -20,7 +20,7 @@ public class Ej2 {
         System.out.println("The numbers are stored in an ArrayList: " + a);
 
         Transformer<Integer> trans = new TenTimes();
-        Transformers.applyDest(trans, a);    // <--- llamando al metodo hecho
+        Transformers.applyDest(trans, a);
         System.out.println("Multiplying the contents by 10 gives: " + a);
     }
 

@@ -18,8 +18,8 @@ public class Ej4 {
     }
 
     public static void main(String[] args) {
-        ArrayList<Integer> l1 = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-        ArrayList<Integer> l2 = new ArrayList<>(Arrays.asList(5, 4, 3, 2));
+        ArrayList<Integer> l1 = new ArrayList<>(Arrays.asList(6, 8, 9, 7));
+        ArrayList<Integer> l2 = new ArrayList<>(Arrays.asList(1, 4, 3, 2));
         Joiner<Integer> adder = new JoinByAdding();
         ArrayList<Integer> result = Joiners.zipArrayLists(adder, l1, l2);
         System.out.println("Result: " + result);
